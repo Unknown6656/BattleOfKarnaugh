@@ -1,0 +1,3 @@
+﻿.class public BattleOfKarnaugh.Program
+{
+}
