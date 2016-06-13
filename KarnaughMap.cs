@@ -10,7 +10,7 @@ using System;
 
 namespace BattleOfKarnaugh
 {
-    //[DebuggerStepThrough, DebuggerNonUserCode, Serializable, ComVisible(true)]
+    [DebuggerStepThrough, DebuggerNonUserCode, Serializable, ComVisible(true)]
     public class KarnaughMap
     {
 
@@ -19,7 +19,6 @@ namespace BattleOfKarnaugh
         public int Width { internal set; get; }
         public int Height { internal set; get; }
         public int VariableCount { internal set; get; }
-
 
 
         internal void init()
