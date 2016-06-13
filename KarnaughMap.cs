@@ -10,7 +10,7 @@ using System;
 
 namespace BattleOfKarnaugh
 {
-    [DebuggerStepThrough, DebuggerNonUserCode, Serializable, ComVisible(true)]
+    //[DebuggerStepThrough, DebuggerNonUserCode, Serializable, ComVisible(true)]
     public class KarnaughMap
     {
 
@@ -38,11 +38,18 @@ namespace BattleOfKarnaugh
                     for (int n = 0; n < v; n++)
                     {
                         int coffs = 1 << (n / 2);
-                        int coord = n % 2 == 0 ? x : y;
-                        int div = 1 << (n + 1);
-                        bool res = (coord + coffs) % (div * 2) >= div;
+                        int inval = coffs << 1;
 
-                        val |= coord >= coffs ? res ? 1 << n : 0 : 0;
+                        int coord = n % 2 != 0 ? x : y;
+
+
+
+                        bool act = (coord - coffs) % (inval << 1) >= inval;
+
+                        val |= act ? 1 << n : 0;
+
+                        //if (x == 3 & y == 2)
+                        //    Debugger.Break();
                     }
 
                     map[y, x] = val;
