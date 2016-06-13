@@ -40,22 +40,11 @@ namespace BattleOfKarnaugh
                         int coffs = 1 << (n / 2);
                         int inval = coffs << 1;
 
-                        int coord = n % 2 != 0 ? x : y;
-
-
-
-                        bool act = (coord - coffs) % (inval << 1) >= inval;
-
-                        val |= act ? 1 << n : 0;
-
-                        //if (x == 3 & y == 2)
-                        //    Debugger.Break();
+                        val |= ((n % 2 == 0 ? x : y) + coffs) % (inval << 1) >= inval ? 1 << n : 0;
                     }
 
                     map[y, x] = val;
                 }
-
-            // TODO : FIX MISTAKES
         }
 
         public KarnaughMap(int variables)
