@@ -24,11 +24,7 @@ namespace BattleOfKarnaugh
 
                 for (int i = 0, h = m.Height; i < h; i++)
                     for (int j = 0, w = m.Width; j < w; j++)
-                    {
-                        Console.ForegroundColor = (ConsoleColor)(m[i, j] % 0xd + 2);
                         Console.Write((j == 0 ? "\t" : "") + m[i, j].ToString("x2") + (j >= w - 1 ? " \n" : " "));
-                        Console.ForegroundColor = ConsoleColor.White;
-                    }
 
                 Console.WriteLine();
             }

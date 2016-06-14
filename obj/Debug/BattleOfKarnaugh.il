@@ -44,14 +44,14 @@
   .ver 1:0:0:0
 }
 .module BattleOfKarnaugh.exe
-// MVID: {6DF385C3-7184-47E1-8520-67E7759183FE}
+// MVID: {40B13BB6-B878-45E3-A66F-9486A99A80FD}
 .custom instance void [mscorlib]System.Security.UnverifiableCodeAttribute::.ctor() = ( 01 00 00 00 ) 
 .imagebase 0x00400000
 .file alignment 0x00000200
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00020003    //  ILONLY 32BITPREFERRED
-// Image base: 0x00F40000
+// Image base: 0x00220000
 
 
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -162,9 +162,9 @@
     // Code size       16 (0x10)
     .maxstack  8
     .language '{3F5162F8-07C6-11D3-9053-00C04FA302A1}', '{994B45C4-E6E9-11D2-903F-00C04FA302A1}', '{5A869D0B-6611-11D3-BD2A-0000F80849BD}'
-    .line 43,43 : 13,14 'c:\\Users\\s_david\\Documents\\Visual Studio 2013\\Projects\\BattleOfKarnaugh\\KarnaughMap.cs'
+    .line 47,47 : 13,14 'b:\\Projects.VisualStudio\\BattleOfKarnaugh\\KarnaughMap.cs'
     IL_0000:  nop
-    .line 44,44 : 17,42 ''
+    .line 48,48 : 17,42 ''
     IL_0001:  ldarg.0
     IL_0002:  ldfld      int32[0...,0...] BattleOfKarnaugh.KarnaughMap::__map
     IL_0007:  ldarg.1
@@ -173,7 +173,7 @@
     IL_000a:  call       instance void int32[0...,0...]::Set(int32,
                                                              int32,
                                                              int32)
-    .line 45,45 : 13,14 ''
+    .line 49,49 : 13,14 ''
     IL_000f:  ret
   } // end of method KarnaughMap::set_Item
 
@@ -184,9 +184,9 @@
     // Code size       19 (0x13)
     .maxstack  3
     .locals init ([0] int32 CS$1$0000)
-    .line 47,47 : 13,14 ''
+    .line 51,51 : 13,14 ''
     IL_0000:  nop
-    .line 48,48 : 17,41 ''
+    .line 52,52 : 17,41 ''
     IL_0001:  ldarg.0
     IL_0002:  ldfld      int32[0...,0...] BattleOfKarnaugh.KarnaughMap::__map
     IL_0007:  ldarg.1
@@ -196,7 +196,7 @@
     IL_000e:  stloc.0
     IL_000f:  br.s       IL_0011
 
-    .line 49,49 : 13,14 ''
+    .line 53,53 : 13,14 ''
     IL_0011:  ldloc.0
     IL_0012:  ret
   } // end of method KarnaughMap::get_Item
@@ -213,24 +213,24 @@
              [3] int32 n,
              [4] bool[] CS$1$0000,
              [5] bool CS$4$0001)
-    .line 59,59 : 9,10 ''
+    .line 63,63 : 9,10 ''
     IL_0000:  nop
-    .line 60,60 : 13,32 ''
+    .line 64,64 : 13,32 ''
     IL_0001:  ldarg.0
     IL_0002:  ldarg.2
     IL_0003:  ldarg.1
     IL_0004:  call       instance int32 BattleOfKarnaugh.KarnaughMap::get_Item(int32,
                                                                                int32)
     IL_0009:  stloc.0
-    .line 61,61 : 13,55 ''
+    .line 65,65 : 13,55 ''
     IL_000a:  ldarg.0
     IL_000b:  call       instance int32 BattleOfKarnaugh.KarnaughMap::get_VariableCount()
     IL_0010:  newarr     [mscorlib]System.Boolean
     IL_0015:  stloc.1
-    .line 63,63 : 18,28 ''
+    .line 67,67 : 18,28 ''
     IL_0016:  ldc.i4.0
     IL_0017:  stloc.2
-    .line 63,63 : 29,44 ''
+    .line 67,67 : 29,44 ''
     IL_0018:  ldloc.1
     IL_0019:  ldlen
     IL_001a:  conv.i4
@@ -238,7 +238,7 @@
     .line 16707566,16707566 : 0,0 ''
     IL_001c:  br.s       IL_0030
 
-    .line 64,64 : 17,52 ''
+    .line 68,68 : 17,52 ''
     IL_001e:  ldloc.1
     IL_001f:  ldloc.2
     IL_0020:  ldloc.0
@@ -251,12 +251,12 @@
     IL_0028:  ldc.i4.1
     IL_0029:  ceq
     IL_002b:  stelem.i1
-    .line 63,63 : 52,55 ''
+    .line 67,67 : 52,55 ''
     IL_002c:  ldloc.2
     IL_002d:  ldc.i4.1
     IL_002e:  add
     IL_002f:  stloc.2
-    .line 63,63 : 45,50 ''
+    .line 67,67 : 45,50 ''
     IL_0030:  ldloc.2
     IL_0031:  ldloc.3
     IL_0032:  clt
@@ -265,12 +265,12 @@
     IL_0036:  ldloc.s    CS$4$0001
     IL_0038:  brtrue.s   IL_001e
 
-    .line 66,66 : 13,24 ''
+    .line 70,70 : 13,24 ''
     IL_003a:  ldloc.1
     IL_003b:  stloc.s    CS$1$0000
     IL_003d:  br.s       IL_003f
 
-    .line 67,67 : 9,10 ''
+    .line 71,71 : 9,10 ''
     IL_003f:  ldloc.s    CS$1$0000
     IL_0041:  ret
   } // end of method KarnaughMap::VariablesAt
@@ -286,9 +286,9 @@
              [3] class [mscorlib]System.Tuple`2<int32,int32> CS$1$0000,
              [4] bool CS$4$0001,
              [5] int32[0...,0...] CS$0$0002)
-    .line 75,75 : 9,10 ''
+    .line 79,79 : 9,10 ''
     IL_0000:  nop
-    .line 76,76 : 13,50 ''
+    .line 80,80 : 13,50 ''
     IL_0001:  ldarg.1
     IL_0002:  conv.u8
     IL_0003:  ldc.i4.1
@@ -306,7 +306,7 @@
     IL_0016:  ldloc.s    CS$4$0001
     IL_0018:  brtrue.s   IL_0044
 
-    .line 77,77 : 17,163 ''
+    .line 81,81 : 17,163 ''
     IL_001a:  ldstr      "value"
     IL_001f:  ldstr      "The given value must be a positive (or zero) integ"
     + "er smaller than "
@@ -325,7 +325,7 @@
                                                                                            string)
     IL_0043:  throw
 
-    .line 79,79 : 20,36 ''
+    .line 83,83 : 20,36 ''
     IL_0044:  ldarg.0
     IL_0045:  ldfld      int32[0...,0...] BattleOfKarnaugh.KarnaughMap::__map
     IL_004a:  dup
@@ -347,10 +347,10 @@
     IL_0061:  call       instance int32& int32[0...,0...]::Address(int32,
                                                                    int32)
     IL_0066:  stloc.0
-    .line 80,80 : 22,32 ''
+    .line 84,84 : 22,32 ''
     IL_0067:  ldc.i4.0
     IL_0068:  stloc.1
-    .line 80,80 : 33,62 ''
+    .line 84,84 : 33,62 ''
     IL_0069:  ldarg.0
     IL_006a:  call       instance int32 BattleOfKarnaugh.KarnaughMap::get_Width()
     IL_006f:  ldarg.0
@@ -360,7 +360,7 @@
     .line 16707566,16707566 : 0,0 ''
     IL_0077:  br.s       IL_00a9
 
-    .line 81,81 : 21,41 ''
+    .line 85,85 : 21,41 ''
     IL_0079:  ldloc.0
     IL_007a:  conv.i
     IL_007b:  ldloc.1
@@ -378,7 +378,7 @@
     IL_0089:  ldloc.s    CS$4$0001
     IL_008b:  brtrue.s   IL_00a5
 
-    .line 82,82 : 25,86 ''
+    .line 86,86 : 25,86 ''
     IL_008d:  ldloc.1
     IL_008e:  ldarg.0
     IL_008f:  call       instance int32 BattleOfKarnaugh.KarnaughMap::get_Height()
@@ -392,12 +392,12 @@
     IL_00a2:  stloc.3
     IL_00a3:  leave.s    IL_00d7
 
-    .line 80,80 : 70,73 ''
+    .line 84,84 : 70,73 ''
     IL_00a5:  ldloc.1
     IL_00a6:  ldc.i4.1
     IL_00a7:  add
     IL_00a8:  stloc.1
-    .line 80,80 : 63,68 ''
+    .line 84,84 : 63,68 ''
     IL_00a9:  ldloc.1
     IL_00aa:  ldloc.2
     IL_00ab:  clt
@@ -409,7 +409,7 @@
     IL_00b3:  ldc.i4.0
     IL_00b4:  conv.u
     IL_00b5:  stloc.0
-    .line 84,84 : 13,128 ''
+    .line 88,88 : 13,128 ''
     IL_00b6:  ldstr      "The value 0x"
     IL_00bb:  ldarga.s   'value'
     IL_00bd:  ldstr      "x8"
@@ -423,7 +423,7 @@
 
     .line 16707566,16707566 : 0,0 ''
     IL_00d7:  nop
-    .line 85,85 : 9,10 ''
+    .line 89,89 : 9,10 ''
     IL_00d8:  ldloc.3
     IL_00d9:  ret
   } // end of method KarnaughMap::CoordinatesAt
@@ -431,167 +431,196 @@
   .method public hidebysig instance void 
           initialize() cil managed
   {
-    // Code size       184 (0xb8)
+    // Code size       227 (0xe3)
     .maxstack  4
     .locals init ([0] int32 w,
              [1] int32 h,
              [2] int32 v,
-             [3] int32 y,
-             [4] int32 x,
-             [5] int32 val,
-             [6] int32 n,
-             [7] int32 coffs,
-             [8] int32 inval,
-             [9] bool CS$4$0000)
-    .line 91,91 : 9,10 ''
+             [3] int32& pinned ptr,
+             [4] int32 y,
+             [5] int32 x,
+             [6] int32 val,
+             [7] int32 n,
+             [8] int32 coffs,
+             [9] int32[0...,0...] CS$0$0000,
+             [10] bool CS$4$0001)
+    .line 95,95 : 9,10 ''
     IL_0000:  nop
-    .line 92,92 : 13,32 ''
+    .line 96,96 : 13,32 ''
     IL_0001:  ldarg.0
     IL_0002:  call       instance int32 BattleOfKarnaugh.KarnaughMap::get_Width()
     IL_0007:  stloc.0
-    .line 93,93 : 13,33 ''
+    .line 97,97 : 13,33 ''
     IL_0008:  ldarg.0
     IL_0009:  call       instance int32 BattleOfKarnaugh.KarnaughMap::get_Height()
     IL_000e:  stloc.1
-    .line 94,94 : 13,40 ''
+    .line 98,98 : 13,40 ''
     IL_000f:  ldarg.0
     IL_0010:  call       instance int32 BattleOfKarnaugh.KarnaughMap::get_VariableCount()
     IL_0015:  stloc.2
-    .line 96,96 : 13,35 ''
+    .line 100,100 : 13,35 ''
     IL_0016:  ldarg.0
     IL_0017:  ldloc.1
     IL_0018:  ldloc.0
     IL_0019:  newobj     instance void int32[0...,0...]::.ctor(int32,
                                                                int32)
     IL_001e:  stfld      int32[0...,0...] BattleOfKarnaugh.KarnaughMap::__map
-    .line 98,98 : 18,28 ''
-    IL_0023:  ldc.i4.0
-    IL_0024:  stloc.3
+    .line 102,102 : 20,36 ''
+    IL_0023:  ldarg.0
+    IL_0024:  ldfld      int32[0...,0...] BattleOfKarnaugh.KarnaughMap::__map
+    IL_0029:  dup
+    IL_002a:  stloc.s    CS$0$0000
+    IL_002c:  brfalse.s  IL_0037
+
+    IL_002e:  ldloc.s    CS$0$0000
+    IL_0030:  callvirt   instance int32 [mscorlib]System.Array::get_Length()
+    IL_0035:  brtrue.s   IL_003c
+
+    IL_0037:  ldc.i4.0
+    IL_0038:  conv.u
+    IL_0039:  stloc.3
+    IL_003a:  br.s       IL_0046
+
+    IL_003c:  ldloc.s    CS$0$0000
+    IL_003e:  ldc.i4.0
+    IL_003f:  ldc.i4.0
+    IL_0040:  call       instance int32& int32[0...,0...]::Address(int32,
+                                                                   int32)
+    IL_0045:  stloc.3
+    .line 103,103 : 22,32 ''
+    IL_0046:  ldc.i4.0
+    IL_0047:  stloc.s    y
     .line 16707566,16707566 : 0,0 ''
-    IL_0025:  br         IL_00aa
+    IL_0049:  br         IL_00d1
 
-    .line 99,99 : 22,32 ''
-    IL_002a:  ldc.i4.0
-    IL_002b:  stloc.s    x
+    .line 104,104 : 26,36 ''
+    IL_004e:  ldc.i4.0
+    IL_004f:  stloc.s    x
     .line 16707566,16707566 : 0,0 ''
-    IL_002d:  br.s       IL_009b
+    IL_0051:  br.s       IL_00c0
 
-    .line 100,100 : 17,18 ''
-    IL_002f:  nop
-    .line 101,101 : 21,33 ''
-    IL_0030:  ldc.i4.0
-    IL_0031:  stloc.s    val
-    .line 103,103 : 26,36 ''
-    IL_0033:  ldc.i4.0
-    IL_0034:  stloc.s    n
+    .line 105,105 : 21,22 ''
+    IL_0053:  nop
+    .line 106,106 : 25,37 ''
+    IL_0054:  ldc.i4.0
+    IL_0055:  stloc.s    val
+    .line 108,108 : 30,40 ''
+    IL_0057:  ldc.i4.0
+    IL_0058:  stloc.s    n
+    .line 108,108 : 41,51 ''
+    IL_005a:  ldc.i4.1
+    IL_005b:  stloc.s    coffs
     .line 16707566,16707566 : 0,0 ''
-    IL_0036:  br.s       IL_0079
+    IL_005d:  br.s       IL_009b
 
-    .line 104,104 : 21,22 ''
-    IL_0038:  nop
-    .line 105,105 : 25,50 ''
-    IL_0039:  ldc.i4.1
-    IL_003a:  ldloc.s    n
-    IL_003c:  ldc.i4.2
-    IL_003d:  div
-    IL_003e:  ldc.i4.s   31
-    IL_0040:  and
-    IL_0041:  shl
-    IL_0042:  stloc.s    coffs
-    .line 106,106 : 25,48 ''
-    IL_0044:  ldloc.s    coffs
-    IL_0046:  ldc.i4.1
-    IL_0047:  shl
-    IL_0048:  stloc.s    inval
-    .line 108,108 : 25,100 ''
-    IL_004a:  ldloc.s    val
-    IL_004c:  ldloc.s    n
-    IL_004e:  ldc.i4.2
-    IL_004f:  rem
-    IL_0050:  brfalse.s  IL_0055
+    .line 109,109 : 29,111 ''
+    IL_005f:  ldloc.s    val
+    IL_0061:  ldloc.s    n
+    IL_0063:  ldc.i4.2
+    IL_0064:  rem
+    IL_0065:  brfalse.s  IL_006b
 
-    IL_0052:  ldloc.3
-    IL_0053:  br.s       IL_0057
+    IL_0067:  ldloc.s    y
+    IL_0069:  br.s       IL_006d
 
-    IL_0055:  ldloc.s    x
-    IL_0057:  nop
-    IL_0058:  ldloc.s    coffs
-    IL_005a:  add
-    IL_005b:  ldloc.s    inval
-    IL_005d:  ldc.i4.1
-    IL_005e:  shl
-    IL_005f:  rem
-    IL_0060:  ldloc.s    inval
-    IL_0062:  bge.s      IL_0067
+    IL_006b:  ldloc.s    x
+    IL_006d:  nop
+    IL_006e:  ldloc.s    coffs
+    IL_0070:  add
+    IL_0071:  ldloc.s    coffs
+    IL_0073:  ldc.i4.2
+    IL_0074:  shl
+    IL_0075:  rem
+    IL_0076:  ldloc.s    coffs
+    IL_0078:  ldc.i4.1
+    IL_0079:  shl
+    IL_007a:  bge.s      IL_007f
 
-    IL_0064:  ldc.i4.0
-    IL_0065:  br.s       IL_006e
+    IL_007c:  ldc.i4.0
+    IL_007d:  br.s       IL_0086
 
-    IL_0067:  ldc.i4.1
-    IL_0068:  ldloc.s    n
-    IL_006a:  ldc.i4.s   31
-    IL_006c:  and
-    IL_006d:  shl
-    IL_006e:  nop
-    IL_006f:  or
-    IL_0070:  stloc.s    val
-    .line 109,109 : 21,22 ''
-    IL_0072:  nop
-    .line 103,103 : 44,47 ''
-    IL_0073:  ldloc.s    n
-    IL_0075:  ldc.i4.1
-    IL_0076:  add
-    IL_0077:  stloc.s    n
-    .line 103,103 : 37,42 ''
-    IL_0079:  ldloc.s    n
-    IL_007b:  ldloc.2
-    IL_007c:  clt
-    IL_007e:  stloc.s    CS$4$0000
-    .line 16707566,16707566 : 0,0 ''
-    IL_0080:  ldloc.s    CS$4$0000
-    IL_0082:  brtrue.s   IL_0038
-
-    .line 111,111 : 21,39 ''
-    IL_0084:  ldarg.0
-    IL_0085:  ldfld      int32[0...,0...] BattleOfKarnaugh.KarnaughMap::__map
-    IL_008a:  ldloc.3
-    IL_008b:  ldloc.s    x
-    IL_008d:  ldloc.s    val
-    IL_008f:  call       instance void int32[0...,0...]::Set(int32,
-                                                             int32,
-                                                             int32)
-    .line 112,112 : 17,18 ''
-    IL_0094:  nop
-    .line 99,99 : 40,43 ''
-    IL_0095:  ldloc.s    x
-    IL_0097:  ldc.i4.1
-    IL_0098:  add
-    IL_0099:  stloc.s    x
-    .line 99,99 : 33,38 ''
-    IL_009b:  ldloc.s    x
-    IL_009d:  ldloc.0
+    IL_007f:  ldc.i4.1
+    IL_0080:  ldloc.s    n
+    IL_0082:  ldc.i4.s   31
+    IL_0084:  and
+    IL_0085:  shl
+    IL_0086:  nop
+    IL_0087:  or
+    IL_0088:  stloc.s    val
+    .line 108,108 : 59,84 ''
+    IL_008a:  ldloc.s    n
+    IL_008c:  ldc.i4.1
+    IL_008d:  add
+    IL_008e:  stloc.s    n
+    IL_0090:  ldc.i4.1
+    IL_0091:  ldloc.s    n
+    IL_0093:  ldc.i4.2
+    IL_0094:  div
+    IL_0095:  ldc.i4.s   31
+    IL_0097:  and
+    IL_0098:  shl
+    IL_0099:  stloc.s    coffs
+    .line 108,108 : 52,57 ''
+    IL_009b:  ldloc.s    n
+    IL_009d:  ldloc.2
     IL_009e:  clt
-    IL_00a0:  stloc.s    CS$4$0000
+    IL_00a0:  stloc.s    CS$4$0001
     .line 16707566,16707566 : 0,0 ''
-    IL_00a2:  ldloc.s    CS$4$0000
-    IL_00a4:  brtrue.s   IL_002f
+    IL_00a2:  ldloc.s    CS$4$0001
+    IL_00a4:  brtrue.s   IL_005f
 
-    .line 98,98 : 36,39 ''
+    .line 111,111 : 25,50 ''
     IL_00a6:  ldloc.3
-    IL_00a7:  ldc.i4.1
-    IL_00a8:  add
-    IL_00a9:  stloc.3
-    .line 98,98 : 29,34 ''
-    IL_00aa:  ldloc.3
-    IL_00ab:  ldloc.1
-    IL_00ac:  clt
-    IL_00ae:  stloc.s    CS$4$0000
+    IL_00a7:  conv.i
+    IL_00a8:  ldloc.s    y
+    IL_00aa:  ldloc.0
+    IL_00ab:  mul
+    IL_00ac:  conv.i
+    IL_00ad:  ldc.i4.4
+    IL_00ae:  mul
+    IL_00af:  add
+    IL_00b0:  ldloc.s    x
+    IL_00b2:  conv.i
+    IL_00b3:  ldc.i4.4
+    IL_00b4:  mul
+    IL_00b5:  add
+    IL_00b6:  ldloc.s    val
+    IL_00b8:  stind.i4
+    .line 112,112 : 21,22 ''
+    IL_00b9:  nop
+    .line 104,104 : 44,47 ''
+    IL_00ba:  ldloc.s    x
+    IL_00bc:  ldc.i4.1
+    IL_00bd:  add
+    IL_00be:  stloc.s    x
+    .line 104,104 : 37,42 ''
+    IL_00c0:  ldloc.s    x
+    IL_00c2:  ldloc.0
+    IL_00c3:  clt
+    IL_00c5:  stloc.s    CS$4$0001
     .line 16707566,16707566 : 0,0 ''
-    IL_00b0:  ldloc.s    CS$4$0000
-    IL_00b2:  brtrue     IL_002a
+    IL_00c7:  ldloc.s    CS$4$0001
+    IL_00c9:  brtrue.s   IL_0053
 
+    .line 103,103 : 40,43 ''
+    IL_00cb:  ldloc.s    y
+    IL_00cd:  ldc.i4.1
+    IL_00ce:  add
+    IL_00cf:  stloc.s    y
+    .line 103,103 : 33,38 ''
+    IL_00d1:  ldloc.s    y
+    IL_00d3:  ldloc.1
+    IL_00d4:  clt
+    IL_00d6:  stloc.s    CS$4$0001
+    .line 16707566,16707566 : 0,0 ''
+    IL_00d8:  ldloc.s    CS$4$0001
+    IL_00da:  brtrue     IL_004e
+
+    IL_00df:  ldc.i4.0
+    IL_00e0:  conv.u
+    IL_00e1:  stloc.3
     .line 113,113 : 9,10 ''
-    IL_00b7:  ret
+    IL_00e2:  ret
   } // end of method KarnaughMap::initialize
 
   .method public hidebysig specialname rtspecialname 
@@ -654,7 +683,7 @@
     .line 124,125 : 17,33 ''
     IL_0041:  ldarg.0
     IL_0042:  ldarg.0
-    IL_0043:  ldc.i4.0
+    IL_0043:  ldc.i4.1
     IL_0044:  dup
     IL_0045:  stloc.1
     IL_0046:  call       instance void BattleOfKarnaugh.KarnaughMap::set_Height(int32)
@@ -740,7 +769,7 @@
   .method public hidebysig static void  Main(string[] args) cil managed
   {
     .entrypoint
-    // Code size       324 (0x144)
+    // Code size       288 (0x120)
     .maxstack  5
     .locals init ([0] class BattleOfKarnaugh.KarnaughMap m,
              [1] int32 n,
@@ -750,7 +779,7 @@
              [5] int32 w,
              [6] int32 CS$0$0000,
              [7] bool CS$4$0001)
-    .line 14,14 : 9,10 'c:\\Users\\s_david\\Documents\\Visual Studio 2013\\Projects\\BattleOfKarnaugh\\Program.cs'
+    .line 14,14 : 9,10 'b:\\Projects.VisualStudio\\BattleOfKarnaugh\\Program.cs'
     IL_0000:  nop
     .line 15,15 : 13,34 ''
     IL_0001:  ldnull
@@ -763,7 +792,7 @@
     IL_000e:  ldc.i4.0
     IL_000f:  stloc.1
     .line 16707566,16707566 : 0,0 ''
-    IL_0010:  br         IL_00e2
+    IL_0010:  br         IL_00be
 
     .line 20,20 : 13,14 ''
     IL_0015:  nop
@@ -787,159 +816,139 @@
     IL_0036:  callvirt   instance int32 BattleOfKarnaugh.KarnaughMap::get_Height()
     IL_003b:  stloc.3
     .line 16707566,16707566 : 0,0 ''
-    IL_003c:  br         IL_00ca
+    IL_003c:  br.s       IL_00a9
 
     .line 26,26 : 26,36 ''
-    IL_0041:  ldc.i4.0
-    IL_0042:  stloc.s    j
+    IL_003e:  ldc.i4.0
+    IL_003f:  stloc.s    j
     .line 26,26 : 37,49 ''
-    IL_0044:  ldloc.0
-    IL_0045:  callvirt   instance int32 BattleOfKarnaugh.KarnaughMap::get_Width()
-    IL_004a:  stloc.s    w
+    IL_0041:  ldloc.0
+    IL_0042:  callvirt   instance int32 BattleOfKarnaugh.KarnaughMap::get_Width()
+    IL_0047:  stloc.s    w
     .line 16707566,16707566 : 0,0 ''
-    IL_004c:  br.s       IL_00ba
+    IL_0049:  br.s       IL_0099
 
-    .line 27,27 : 21,22 ''
-    IL_004e:  nop
-    .line 28,28 : 25,85 ''
-    IL_004f:  ldloc.0
-    IL_0050:  ldloc.2
-    IL_0051:  ldloc.s    j
-    IL_0053:  callvirt   instance int32 BattleOfKarnaugh.KarnaughMap::get_Item(int32,
+    .line 27,27 : 25,115 ''
+    IL_004b:  ldloc.s    j
+    IL_004d:  brfalse.s  IL_0056
+
+    IL_004f:  ldstr      ""
+    IL_0054:  br.s       IL_005b
+
+    IL_0056:  ldstr      "\t"
+    IL_005b:  nop
+    IL_005c:  ldloc.0
+    IL_005d:  ldloc.2
+    IL_005e:  ldloc.s    j
+    IL_0060:  callvirt   instance int32 BattleOfKarnaugh.KarnaughMap::get_Item(int32,
                                                                                int32)
-    IL_0058:  ldc.i4.s   13
-    IL_005a:  rem
-    IL_005b:  ldc.i4.2
-    IL_005c:  add
-    IL_005d:  call       void [mscorlib]System.Console::set_ForegroundColor(valuetype [mscorlib]System.ConsoleColor)
-    IL_0062:  nop
-    .line 29,29 : 25,115 ''
-    IL_0063:  ldloc.s    j
-    IL_0065:  brfalse.s  IL_006e
+    IL_0065:  stloc.s    CS$0$0000
+    IL_0067:  ldloca.s   CS$0$0000
+    IL_0069:  ldstr      "x2"
+    IL_006e:  call       instance string [mscorlib]System.Int32::ToString(string)
+    IL_0073:  ldloc.s    j
+    IL_0075:  ldloc.s    w
+    IL_0077:  ldc.i4.1
+    IL_0078:  sub
+    IL_0079:  bge.s      IL_0082
 
-    IL_0067:  ldstr      ""
-    IL_006c:  br.s       IL_0073
+    IL_007b:  ldstr      " "
+    IL_0080:  br.s       IL_0087
 
-    IL_006e:  ldstr      "\t"
-    IL_0073:  nop
-    IL_0074:  ldloc.0
-    IL_0075:  ldloc.2
-    IL_0076:  ldloc.s    j
-    IL_0078:  callvirt   instance int32 BattleOfKarnaugh.KarnaughMap::get_Item(int32,
-                                                                               int32)
-    IL_007d:  stloc.s    CS$0$0000
-    IL_007f:  ldloca.s   CS$0$0000
-    IL_0081:  ldstr      "x2"
-    IL_0086:  call       instance string [mscorlib]System.Int32::ToString(string)
-    IL_008b:  ldloc.s    j
-    IL_008d:  ldloc.s    w
-    IL_008f:  ldc.i4.1
-    IL_0090:  sub
-    IL_0091:  bge.s      IL_009a
-
-    IL_0093:  ldstr      " "
-    IL_0098:  br.s       IL_009f
-
-    IL_009a:  ldstr      " \n"
-    IL_009f:  nop
-    IL_00a0:  call       string [mscorlib]System.String::Concat(string,
+    IL_0082:  ldstr      " \n"
+    IL_0087:  nop
+    IL_0088:  call       string [mscorlib]System.String::Concat(string,
                                                                 string,
                                                                 string)
-    IL_00a5:  call       void [mscorlib]System.Console::Write(string)
-    IL_00aa:  nop
-    .line 30,30 : 25,70 ''
-    IL_00ab:  ldc.i4.s   15
-    IL_00ad:  call       void [mscorlib]System.Console::set_ForegroundColor(valuetype [mscorlib]System.ConsoleColor)
-    IL_00b2:  nop
-    .line 31,31 : 21,22 ''
-    IL_00b3:  nop
+    IL_008d:  call       void [mscorlib]System.Console::Write(string)
+    IL_0092:  nop
     .line 26,26 : 57,60 ''
-    IL_00b4:  ldloc.s    j
-    IL_00b6:  ldc.i4.1
-    IL_00b7:  add
-    IL_00b8:  stloc.s    j
+    IL_0093:  ldloc.s    j
+    IL_0095:  ldc.i4.1
+    IL_0096:  add
+    IL_0097:  stloc.s    j
     .line 26,26 : 50,55 ''
-    IL_00ba:  ldloc.s    j
-    IL_00bc:  ldloc.s    w
-    IL_00be:  clt
-    IL_00c0:  stloc.s    CS$4$0001
+    IL_0099:  ldloc.s    j
+    IL_009b:  ldloc.s    w
+    IL_009d:  clt
+    IL_009f:  stloc.s    CS$4$0001
     .line 16707566,16707566 : 0,0 ''
-    IL_00c2:  ldloc.s    CS$4$0001
-    IL_00c4:  brtrue.s   IL_004e
+    IL_00a1:  ldloc.s    CS$4$0001
+    IL_00a3:  brtrue.s   IL_004b
 
     .line 25,25 : 54,57 ''
-    IL_00c6:  ldloc.2
-    IL_00c7:  ldc.i4.1
-    IL_00c8:  add
-    IL_00c9:  stloc.2
+    IL_00a5:  ldloc.2
+    IL_00a6:  ldc.i4.1
+    IL_00a7:  add
+    IL_00a8:  stloc.2
     .line 25,25 : 47,52 ''
-    IL_00ca:  ldloc.2
-    IL_00cb:  ldloc.3
-    IL_00cc:  clt
-    IL_00ce:  stloc.s    CS$4$0001
+    IL_00a9:  ldloc.2
+    IL_00aa:  ldloc.3
+    IL_00ab:  clt
+    IL_00ad:  stloc.s    CS$4$0001
     .line 16707566,16707566 : 0,0 ''
-    IL_00d0:  ldloc.s    CS$4$0001
-    IL_00d2:  brtrue     IL_0041
+    IL_00af:  ldloc.s    CS$4$0001
+    IL_00b1:  brtrue.s   IL_003e
 
-    .line 33,33 : 17,37 ''
-    IL_00d7:  call       void [mscorlib]System.Console::WriteLine()
-    IL_00dc:  nop
-    .line 34,34 : 13,14 ''
-    IL_00dd:  nop
+    .line 29,29 : 17,37 ''
+    IL_00b3:  call       void [mscorlib]System.Console::WriteLine()
+    IL_00b8:  nop
+    .line 30,30 : 13,14 ''
+    IL_00b9:  nop
     .line 19,19 : 36,39 ''
-    IL_00de:  ldloc.1
-    IL_00df:  ldc.i4.1
-    IL_00e0:  add
-    IL_00e1:  stloc.1
+    IL_00ba:  ldloc.1
+    IL_00bb:  ldc.i4.1
+    IL_00bc:  add
+    IL_00bd:  stloc.1
     .line 19,19 : 29,34 ''
-    IL_00e2:  ldloc.1
-    IL_00e3:  ldc.i4.s   9
-    IL_00e5:  clt
-    IL_00e7:  stloc.s    CS$4$0001
+    IL_00be:  ldloc.1
+    IL_00bf:  ldc.i4.s   9
+    IL_00c1:  clt
+    IL_00c3:  stloc.s    CS$4$0001
     .line 16707566,16707566 : 0,0 ''
-    IL_00e9:  ldloc.s    CS$4$0001
-    IL_00eb:  brtrue     IL_0015
+    IL_00c5:  ldloc.s    CS$4$0001
+    IL_00c7:  brtrue     IL_0015
 
-    .line 36,36 : 13,51 ''
-    IL_00f0:  ldloc.0
-    IL_00f1:  ldc.i4.3
-    IL_00f2:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
-    IL_00f7:  call       void [mscorlib]System.Console::WriteLine(object)
-    IL_00fc:  nop
-    .line 37,37 : 13,51 ''
-    IL_00fd:  ldloc.0
-    IL_00fe:  ldc.i4.1
-    IL_00ff:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
-    IL_0104:  call       void [mscorlib]System.Console::WriteLine(object)
-    IL_0109:  nop
-    .line 38,38 : 13,51 ''
-    IL_010a:  ldloc.0
-    IL_010b:  ldc.i4.5
-    IL_010c:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
-    IL_0111:  call       void [mscorlib]System.Console::WriteLine(object)
-    IL_0116:  nop
-    .line 39,39 : 13,52 ''
-    IL_0117:  ldloc.0
-    IL_0118:  ldc.i4.s   42
-    IL_011a:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
-    IL_011f:  call       void [mscorlib]System.Console::WriteLine(object)
-    IL_0124:  nop
-    .line 41,41 : 13,72 ''
-    IL_0125:  ldstr      " + "
-    IL_012a:  ldloc.0
-    IL_012b:  ldc.i4.4
-    IL_012c:  ldc.i4.8
-    IL_012d:  callvirt   instance bool[] BattleOfKarnaugh.KarnaughMap::VariablesAt(int32,
+    .line 32,32 : 13,51 ''
+    IL_00cc:  ldloc.0
+    IL_00cd:  ldc.i4.3
+    IL_00ce:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
+    IL_00d3:  call       void [mscorlib]System.Console::WriteLine(object)
+    IL_00d8:  nop
+    .line 33,33 : 13,51 ''
+    IL_00d9:  ldloc.0
+    IL_00da:  ldc.i4.1
+    IL_00db:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
+    IL_00e0:  call       void [mscorlib]System.Console::WriteLine(object)
+    IL_00e5:  nop
+    .line 34,34 : 13,51 ''
+    IL_00e6:  ldloc.0
+    IL_00e7:  ldc.i4.5
+    IL_00e8:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
+    IL_00ed:  call       void [mscorlib]System.Console::WriteLine(object)
+    IL_00f2:  nop
+    .line 35,35 : 13,52 ''
+    IL_00f3:  ldloc.0
+    IL_00f4:  ldc.i4.s   42
+    IL_00f6:  callvirt   instance class [mscorlib]System.Tuple`2<int32,int32> BattleOfKarnaugh.KarnaughMap::CoordinatesAt(int32)
+    IL_00fb:  call       void [mscorlib]System.Console::WriteLine(object)
+    IL_0100:  nop
+    .line 37,37 : 13,72 ''
+    IL_0101:  ldstr      " + "
+    IL_0106:  ldloc.0
+    IL_0107:  ldc.i4.4
+    IL_0108:  ldc.i4.8
+    IL_0109:  callvirt   instance bool[] BattleOfKarnaugh.KarnaughMap::VariablesAt(int32,
                                                                                    int32)
-    IL_0132:  call       string [mscorlib]System.String::Join<bool>(string,
+    IL_010e:  call       string [mscorlib]System.String::Join<bool>(string,
                                                                     class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
-    IL_0137:  call       void [mscorlib]System.Console::WriteLine(string)
-    IL_013c:  nop
-    .line 43,43 : 13,31 ''
-    IL_013d:  call       valuetype [mscorlib]System.ConsoleKeyInfo [mscorlib]System.Console::ReadKey()
-    IL_0142:  pop
-    .line 44,44 : 9,10 ''
-    IL_0143:  ret
+    IL_0113:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_0118:  nop
+    .line 39,39 : 13,31 ''
+    IL_0119:  call       valuetype [mscorlib]System.ConsoleKeyInfo [mscorlib]System.Console::ReadKey()
+    IL_011e:  pop
+    .line 40,40 : 9,10 ''
+    IL_011f:  ret
   } // end of method Program::Main
 
 } // end of class BattleOfKarnaugh.Program
@@ -948,4 +957,4 @@
 // =============================================================
 
 // *********** DISASSEMBLY COMPLETE ***********************
-// Warnung: Win32-Ressourcendatei "C:\Users\s_david\Documents\Visual Studio 2013\Projects\BattleOfKarnaugh\obj\Debug\BattleOfKarnaugh.res" wurde erstellt.
+// Warnung: Win32-Ressourcendatei "B:\Projects.VisualStudio\BattleOfKarnaugh\obj\Debug\BattleOfKarnaugh.res" wurde erstellt.

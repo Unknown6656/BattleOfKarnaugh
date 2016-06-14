@@ -10,6 +10,10 @@ using System;
 
 namespace BattleOfKarnaugh
 {
+
+    /// <summary>
+    /// Represents a simple Karnaugh map
+    /// </summary>
     [DebuggerStepThrough, DebuggerNonUserCode, Serializable, ComVisible(true)]
     public unsafe class KarnaughMap
     {
@@ -95,21 +99,17 @@ namespace BattleOfKarnaugh
 
             __map = new int[h, w];
 
-            for (int y = 0; y < h; y++)
-                for (int x = 0; x < w; x++)
-                {
-                    int val = 0;
-
-                    for (int n = 0; n < v; n++)
+            fixed (int* ptr = __map)
+                for (int y = 0; y < h; y++)
+                    for (int x = 0; x < w; x++)
                     {
-                        int coffs = 1 << (n / 2);
-                        int inval = coffs << 1;
+                        int val = 0;
 
-                        val |= ((n % 2 == 0 ? x : y) + coffs) % (inval << 1) >= inval ? 1 << n : 0;
+                        for (int n = 0, coffs = 1; n < v; n++, coffs = 1 << (n / 2))
+                            val |= ((n % 2 == 0 ? x : y) + coffs) % (coffs << 2) >= (coffs << 1) ? 1 << n : 0;
+
+                        *(ptr + y * w + x) = val;
                     }
-
-                    __map[y, x] = val;
-                }
         }
 
         /// <summary>
@@ -122,7 +122,7 @@ namespace BattleOfKarnaugh
                 throw new ArgumentOutOfRangeException("variables", "The variable count must be a positive integer value between 0 and 31 (incl.).");
             else if ((this.VariableCount = variables) == 0)
                 this.Width =
-                this.Height = 0;
+                this.Height = 1;
             else
             {
                 this.Width = 1 << (int)Math.Ceiling((double)variables / 2d);
